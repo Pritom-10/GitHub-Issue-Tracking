@@ -33,16 +33,7 @@ navButtons.forEach((button) => {
 
 let allIssues = [];
 
-async function loadIssues() {
-  loadingSpinner.classList.remove("hidden");
-  loadingSpinner.classList.add('flex')
-  const res = await fetch(
-    "https://phi-lab-server.vercel.app/api/v1/lab/issues")
-  const data = await res.json();
-  loadingSpinner.classList.add("hidden");
-  allIssues=data.data
-  displayIssues(allIssues);
-}
+
 
 
 

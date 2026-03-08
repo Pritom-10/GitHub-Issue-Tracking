@@ -119,18 +119,18 @@ async function openModal(issueId) {
   const res = await fetch(
     `https://phi-lab-server.vercel.app/api/v1/lab/issue/${issueId}`,
   );
-  const data = await res.json()
-  const details = data.data
+  const data = await res.json();
+  const details = data.data;
   modal.showModal();
-  title.textContent = details.title
-  description.textContent = details.description
-  open.textContent = details.status
-  bug.textContent = details.labels[0]
-  wanted.textContent = details.labels[1]||"empthy"
-  assign.textContent = details.assignee||"not found"
-  priority.textContent = details.priority
-  author.textContent = details.author
-  date.textContent = new Date(details.createdAt).toLocaleDateString()
+  title.textContent = details.title;
+  description.textContent = details.description;
+  open.textContent = details.status;
+  bug.textContent = details.labels[0];
+  wanted.textContent = details.labels[1] || "empthy";
+  assign.textContent = details.assignee || "not found";
+  priority.textContent = details.priority;
+  author.textContent = details.author;
+  date.textContent = new Date(details.createdAt).toLocaleDateString();
 }
 
 loadIssues();

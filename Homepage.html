@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#F8FAFC]">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- font cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- daisyui and tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      font-family: "Geist", sans-serif;
+    }
+  </style>
+  <title>GitHub Issue Tracker</title>
+</head>
+<body>
+  <nav>
+    <div class="navbar bg-base-100 shadow-sm px-12">
+      <div class="flex-1">
+          <div class="flex  items-center gap-2">
+            <img width="36px" src="./assets/github-logo.png" alt="">
+            <h5 class="text-[#1F2937] font-semibold text-2xl">GitHub Issues Tracker</h5>
+          </div>
+      </div>
+   
+    </div>
+  </nav class="min-h-screen w-10/12 mt-10 mx-auto">
+
+  <main  class="min-h-screen w-10/12 mt-10 mx-auto">
+      <section class="mb-3">
+        <div class="button-menu">
+          <div id="nav_buttons" class="navbar bg-base-100 shadow-sm flex items-center gap-2 py-8 pl-10 rounded-md">
+            <a onclick="selectButtons('all')" class="btn btn-outline px-10">All</a>
+            <a onclick="selectButtons('open')" class="btn btn-outline px-10">Open</a>
+            <a onclick="selectButtons('closed')" class="btn btn-outline px-10">Closed</a>
+          </div>
+        </div>
+      
+      </section>
+      
+      <section>
+        <div class="navbar bg-base-100 shadow-sm rounded-t-md flex justify-between px-8 py-5">
+          <div class="flex justify-between items-center gap-2">
+            <img src="./assets/Aperture.png" alt="">
+            <div>
+              <h2 class="font-semibold text-[20px] text-[#1F2937]"><span id="count">50</span> Issue</h2>
+              <p class="text-sm text-[#64748B]">Track and manage your project issues</p>
+            </div>
+          </div>
+        <div class="flex gap-2 justify-center items-center">
+            <div class="flex justify-center items-center gap-1">
+              <span class="bg-[#00A96E] rounded-full h-3 w-3 inline-block"></span>
+              <p>Open</p>
+            </div>
+            <div class="flex justify-center items-center gap-1">
+              <span class="bg-[#A855F7] rounded-full h-3 w-3 inline-block"></span>
+              <p>Closed</p>
+            </div>
+        </div>
+        </div>
+      </section>
+      <!-- <hr class="bg-slate-500 inline-block"> -->
+      <section class="bg-[#FBFBFB] p-5">
+        <div id="issues_container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-5 ">
+          
+          <div id="loading"
+            class="h-[60vh] hidden justify-center items-center col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-4">
+            <span class="loading loading-dots loading-xs"></span>
+            <span class="loading loading-dots loading-sm"></span>
+            <span class="loading loading-dots loading-md"></span>
+            <span class="loading loading-dots loading-lg"></span>
+            <span class="loading loading-dots loading-xl"></span>
+          </div>
+        </div>
+        
+      </section>
+
+      <!-- Open the modal using ID.showModal() method -->
+      <button class="btn" onclick="modal.showModal()">open modal</button>
+      <dialog id="modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          
+          <div class="grid grid-cols-1 items-center space-y-5">
+            <h2 id="title" class="font-bold text-2xl text-[#1F2937]">Lorem ipsum dolor sit</h2>
+            <div class="flex items-center gap-3">
+              <button id="open" class="p-4 btn btn-outline rounded-full">open</button>
+              <span class="text-[12px] font-bold">.</span>
+              <p class="text-[#64748B] text-sm">Open by <span id="author">author</span></p>
+              <span class="text-[12px] font-bold">.</span>
+              <p id="date"  class="text-[#64748B] text-sm">1/23/4532</p>
+            </div>
+            <div>
+              <button class="btn btn-warning btn-soft" id="bug">bug</button>
+              <button class="btn btn-warning btn-soft" id="wanted">help wanted</button>
+            </div>
+            <p id="description" class="text-[#64748B] text-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nesciunt!</p>
+            <div class="bg-[#F8FAFC] grid grid-cols-2">
+              <div>
+                <p class="text-[#64748B] text-[16px]">Assignee: </p>
+                <p id="assign" class="font-bold text-[16px] text-[#1F2937]">adksd</p>
+              </div>
+             <div>
+              <p class="text-[#64748B] text-[16px]">Priority</p>
+              <p id="priority" class="btn outline rounded-full">jsaida</p>
+             </div>
+            </div>
+          </div>
+          
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn btn-primary">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+  </main>
+
+  <script src="./script/homepage.js"></script>
+</body>
+</html>

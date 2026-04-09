@@ -6,7 +6,7 @@ A fully functional Issue Tracker web application that allows users to sign in an
 
 # **🌐 Live Demo**
 
-🔗 https://e-commarce01.netlify.app/
+🔗 https://github-issue-ass-05.netlify.app/
 
 # **🛠️ Tech Stack**
 
@@ -109,7 +109,7 @@ Start the development server:
 
 # **🔗 Relevant Links**
 
-### **🌐 Live Site:** https://e-commarce01.netlify.app/
+### **🌐 Live Site:** [https://e-commarce01.netlify.app/](https://github-issue-ass-05.netlify.app/)
 
 ### **💼 Portfolio:** https://pritom-personal-portfolio.netlify.app/
 

@@ -85,7 +85,7 @@ A fully functional Issue Tracker web application that allows users to sign in an
 
 **Clone the repository:**
 
-- git clone https://github.com/Pritom-10/E-commarce.git
+- git clone https://github.com/Pritom-10/GitHub-Issue-Tracking.git
 
 **Go to the project folder:**
 
@@ -109,7 +109,7 @@ A fully functional Issue Tracker web application that allows users to sign in an
 
 # **🔗 Relevant Links**
 
-### **🌐 Live Site:** [https://e-commarce01.netlify.app/](https://github-issue-ass-05.netlify.app/)
+### **🌐 Live Site:** https://github-issue-ass-05.netlify.app/
 
 ### **💼 Portfolio:** https://pritom-personal-portfolio.netlify.app/
 

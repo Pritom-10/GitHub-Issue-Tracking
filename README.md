@@ -28,50 +28,71 @@ A fully functional Issue Tracker web application that allows users to sign in an
 
 - Search functionality
   
-# **✨ Features**
+## ✨ Features
 
-##  **👤 Sign In / Authentication**
+### 📊 Dashboard
+- Displays total number of jobs  
+- Shows total Interview jobs dynamically  
+- Shows total Rejected jobs dynamically  
+- Real-time updates based on user actions  
 
-- Sign In page as the first entry point
+### 📋 Job Cards
+- Minimum 8 job cards displayed  
+- Each card contains:
+  - Company Name  
+  - Position  
+  - Location  
+  - Job Type  
+  - Salary  
+  - Description  
+- Clean and structured card layout  
 
-- Product slides for each category
+### 🏷️ Status Management
+- Mark jobs as:
+  - Interview  
+  - Rejected  
+- Status is updated dynamically  
+- Jobs move between tabs automatically  
 
-- Add products to cart
+### 🔄 Toggle Functionality
+- Switch between Interview ↔ Rejected  
+- Updates:
+  - Dashboard counts  
+  - Tab content  
+  - Job status  
 
-- Track number of items, size, and total cost in dollars
+### 📂 Tab System
+- Three tabs:
+  - All Jobs  
+  - Interview  
+  - Rejected  
+- All tab shows all jobs  
+- Interview & Rejected tabs filter accordingly  
+- Shows "No jobs available" message when empty  
 
-## **👤 User Authentication**
+### 🔍 Search Feature
+- Search jobs by name  
+- Real-time filtering  
+- Improves usability  
 
-- Signup / login functionality
+### 📊 Job Statistics
+- Displays count for:
+  - Total jobs  
+  - Interview jobs  
+  - Rejected jobs  
 
-- Redirects to main page upon successful login
+### ❌ Delete Functionality
+- Remove job cards from UI  
+- Updates:
+  - Dashboard counts  
+  - Tab counts  
+- Fully dynamic behavior  
 
-## **🗂️ Main Page / Issue Cards**
+### 📱 Responsive Design
+- Fully responsive layout  
+- Works on mobile, tablet, and desktop  
 
-- Each issue card shows:
- - Priority (High / Medium / Low)
- - Issue Name
- - Description
- - Creation date & upload date
- - Open / Closed status
-- Open button shows unresolved issues
-- Closed button shows resolved issues
-
-## **📞 Customer Support**
-
-- Helpline feature for instant assistance
-
-## **🔍 Search Functionality**
-
-- Search box to find issues by name
-
-- Real-time filtering of open/closed issues
-
-## **📊 Issue Statistics**
-
-- Count of total open and closed issues displayed
-
-- Easy overview of project status
+---
 
 # **📦 Dependencies**
 

@@ -1,44 +1,118 @@
-          My Honest Answer
+## **📝 Issue Tracker Web App**
 
+# **📌 Overview**
 
-1. What is the difference between var, let, and const?
+A fully functional Issue Tracker web application that allows users to sign in and manage issues efficiently. The platform provides detailed issue cards with priority levels, descriptions, creation dates, and status tracking. Users can search for issues and track open/closed counts in real-time.
 
-=> A var variable works inside a function. If it is declared inside { } (like in an if block), it can still be accessed outside that block.
+# **🌐 Live Demo**
 
-=>A let variable only works inside the block { } where it is declared.
+🔗 https://e-commarce01.netlify.app/
 
-=>const works the same as let in terms of scope. It is also block scoped.
+# **🛠️ Tech Stack**
 
-2. What is the spread operator (...)?
+- **HTML5**
 
-=>The spread operator (...) in JavaScript is used to expand or spread elements of an array or object into individual elements.
+- **CSS**
 
-It is commonly used with arrays, objects, and function arguments.
+- **JavaScript**
 
-3. What is the difference between map(), filter(), and forEach()?
+- **React**
 
-=>map() is used to create a new array by transforming each element of the original array.
-a.Returns a new array
-b.The length of the new array is the same as the original
+- **Tailwind CSS**
 
-=>filter() is used to select elements based on a condition.
-a.Returns a new array
-b.The new array may have fewer elements
+## **Tools & Integrations:**
 
-=>forEach() is used to loop through an array and perform an action.
-a.Does not return a new array
-b.Mainly used for side effects like printing or updating values.
+- User Authentication (Sign In / Signup)
 
-4. What is an arrow function?
+- Issue management logic
 
-=>An arrow function is a shorter and modern way to write functions in JavaScript.
-It was introduced in ES6
+- Search functionality
+  
+# **✨ Features**
 
-Example--> const add = (a, b) => {
-  return a + b;
-};
+##  **👤 Sign In / Authentication**
 
-5. What are template literals?
+- Sign In page as the first entry point
 
-=>Template literals are a modern way to create strings in JavaScript.
-They were introduced in ES6 and use backticks ( ) instead of single (' ') or double (" ") quotes.
+- Product slides for each category
+
+- Add products to cart
+
+- Track number of items, size, and total cost in dollars
+
+## **👤 User Authentication**
+
+- Signup / login functionality
+
+- Redirects to main page upon successful login
+
+## **🗂️ Main Page / Issue Cards**
+
+- Each issue card shows:
+ - Priority (High / Medium / Low)
+ - Issue Name
+ - Description
+ - Creation date & upload date
+ - Open / Closed status
+- Open button shows unresolved issues
+- Closed button shows resolved issues
+
+## **📞 Customer Support**
+
+- Helpline feature for instant assistance
+
+## **🔍 Search Functionality**
+
+- Search box to find issues by name
+
+- Real-time filtering of open/closed issues
+
+## **📊 Issue Statistics**
+
+- Count of total open and closed issues displayed
+
+- Easy overview of project status
+
+# **📦 Dependencies**
+
+- **React**
+
+- **Tailwind CSS**
+
+- **Axios** (for API calls)
+
+# **⚙️ How to Run Locally**
+
+**Clone the repository:**
+
+- git clone https://github.com/Pritom-10/E-commarce.git
+
+**cd ecommerce-website**
+
+Install dependencies:
+
+**npm install**
+
+Start the development server:
+
+**npm run dev**
+
+**👉 Open in browser: http://localhost:3000**
+
+# **📷 Screenshots**
+
+## **🏠 Home Page**
+
+## **🛒 Cart & Checkout**
+
+## **👤 Signup Page**
+
+# **🔗 Relevant Links**
+
+### **🌐 Live Site:** https://e-commarce01.netlify.app/
+
+### **💼 Portfolio:** https://pritom-personal-portfolio.netlify.app/
+
+# **🙌 Author**
+
+### **Pritom Barua Shiro**

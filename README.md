@@ -123,10 +123,13 @@ A fully functional Issue Tracker web application that allows users to sign in an
 # **📷 Screenshots**
 
 ## **🏠 Home Page**
+<img width="1080" height="1350" alt="githome" src="https://github.com/user-attachments/assets/621bc3ae-b957-423d-b5d3-86ac87a5a39b" />
 
-## **🛒 Cart & Checkout**
+## **SeachBox Result**
+<img width="1080" height="1350" alt="gitsearch" src="https://github.com/user-attachments/assets/13040d07-eddd-432f-bd4a-56c6fd448e64" />
 
 ## **👤 Signup Page**
+<img width="1080" height="1350" alt="gitsign" src="https://github.com/user-attachments/assets/5ba117cd-67a6-461d-8209-51130f939c07" />
 
 # **🔗 Relevant Links**
 
